@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Declaring CSS variables */
+    :root {
+        --deep-blue: #0c1022;
+        --orange-red: #ff5619;
+        --white: white;
+        --blue-bg: rgba(67, 52, 236, 0.394);
+    }
+
+/* Navbar  Style  */
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            z-index: 2;
+           background-color: var(--deep-blue);
+           width: 100vw;
+           padding-inline: 5.75rem;
+           padding-block: 1.5rem;
+           top: 0;
+        }
+
+        header h1 {
+            align-self: center;
+        }
+        body{
+            background-color: var(--deep-blue);
+            color: white;
+            
+        }
+
+        .hero-section, 
+        .main-categories-container, 
+        .popular-courses-main,
+        .faq-section,
+        .testimonials-section, .footer-section
+        {
+            max-width: 78rem;
+            margin-inline: auto;
+        }
+
+
+        nav {
+            align-self: center;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem ;
+            font-weight: 500;
+        }
+
+        a:hover{
+            color: var(--orange-red);
+            transition: color 500ms;
+        }
+
+        .menu-open {
+            font-size: 2.5rem; 
+            display: none;
+        }
+
+        .transparent-background {
+            display: none;
+        }
+
+        .mobile-nav-container {
+            display: none;
+        }
+        .popular-courses-main{
+            margin-top: 10rem;
+        }
+
+        .course-cards{
+            margin-block: 5rem;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1rem;
+            row-gap: 2rem;
+        }
+
+        .course-card{
+            text-align: center;
+            background-color: var(--blue-bg);
+
+            padding-block: 3rem;
+            
+            
+        }
+
+        .course-card:hover{
+            background: transparent;
+            border: 1px solid var(--blue-bg)
+            
+        }
+
+        .course-card p{
+            padding: 1rem;
+            line-height: 1.8;
+            
+        }
+        /* Footer Section style */
+        .footer-section{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 6rem;
+            padding-block: 2rem;
+
+        }
+
+
+        footer{
+            background-color: var(--orange-red);
+            margin-top: 5rem;
+        }
+
+        li{
+            list-style: none;
+            padding: 0.5rem 0;
+            
+        }
+
+        li a{
+            text-decoration: none;
+            color: var(--white);
+
+        }
+    
+        .contact-section p{
+            padding-block: 0.2rem;
+        }
+
+        .socials{
+            padding-block: 2rem;
+            /* display: flex;
+            gap: 1rem; */
+        }
+        
+    /* child selector can be used to achieve the same display flex code effect as above */
+        /* .socials svg:nth-child(2),  .socials svg:nth-child(4){
+            margin-inline: 1rem;
+        } */
+    
+        .egator-section p{
+            line-height: 1.5;
+            padding-block: 2rem;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        /*Media Queries*/
+        @media screen and (max-width: 768px){
+            .course-cards
+            {
+                grid-template-columns: 1fr;
+                padding-inline: 1rem;
+            }
+            .footer-section{
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                padding-block: 2rem;
+
+            }
+
+    
+
+            
+        }
