@@ -1,21 +1,22 @@
-import React from 'react'
+import React from "react";
 
-function FaqCard() {
-
+function FaqCard({ index, onQuestionClick, isExpanded, question, answer }) {
   return (
     <div>
-        <div className="question-answer">
-                <div className="faq-question">
-                    <span className="plus-sign">&#43;</span>
-                    <span className="minus-sign">&#8722;</span>
-                    <p>Lorem ipsum dolor sit amet?</p>
-                </div>
-                <div className="faq-answer">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nihil ducimus autem eaque sapiente aspernatur dolorem fugit id aut iusto.
-                </div>
-            </div>
+      <div className="faq-question" onClick={() => onQuestionClick(index)}>
+        <span className={`plus-sign ${isExpanded ? "none" : "show"}`}>
+          &#43;
+        </span>
+        <span className={`minus-sign ${isExpanded ? "active" : ""}`}>
+          &#8722;
+        </span>
+        <p>{question}</p>
+      </div>
+      <div className={`faq-answer ${isExpanded ? "expanded" : ""}`}>
+        {answer}
+      </div>
     </div>
-  )
+  );
 }
 
-export default FaqCard
+export default FaqCard;

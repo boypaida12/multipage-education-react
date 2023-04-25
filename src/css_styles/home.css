@@ -165,6 +165,16 @@
         .learn-more-btn{
             padding: 1rem;
             border: 1px solid transparent;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 200ms;
+        }
+
+        .learn-more-btn:hover {
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+            transform: translateY(5%);
         }
 
         .card h4 {
