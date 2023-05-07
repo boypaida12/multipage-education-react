@@ -4,6 +4,7 @@ import HeroComponent from '../components/HeroComponent'
 import CategoriesComponent from '../components/Categories/CategoriesComponent'
 import PopularCourses from '../components/Popular Courses/PopularCourses'
 import FaqComponent from '../components/Faq/FaqComponent'
+import TestimonialsComponent from '../components/TestimonialsComponent'
 
 function HomePage() {
   return (
@@ -13,6 +14,7 @@ function HomePage() {
         <CategoriesComponent/>
         <PopularCourses/>
         <FaqComponent/>
+        <TestimonialsComponent/>
     </div>
   );
 }

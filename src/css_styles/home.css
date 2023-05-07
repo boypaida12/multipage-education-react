@@ -303,7 +303,7 @@
         .testimonial {
             background-color: var(--orange-red);
             padding: 2rem;
-            margin-top: 3rem;
+            margin-block: 3rem;
             position: relative;
         }
 
@@ -326,10 +326,6 @@
         .testimonial-container
         {
             margin-block: 2rem;
-        }
-
-        .swiper-pagination {
-            z-index: -999 !important;
         }
 
         

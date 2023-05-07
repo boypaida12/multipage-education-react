@@ -18,10 +18,10 @@ function HeaderComponent() {
             <div className="mobile-nav-container">
                 <span className="menu-close" id="menuClose">&#120;</span>
                 <nav className="mobile-nav">
-                    <a href="../html_pages/home.html">Home</a>
-                    <a href="../html_pages/about.html">About</a>
-                    <a href="../html_pages/courses.html">Courses</a>
-                    <a href="../html_pages/contact.html">Contact</a>
+                    <a href="/">Home</a>
+                    <a href="/">About</a>
+                    <a href="/">Courses</a>
+                    <a href="/">Contact</a>
                 </nav>
             </div>
         </div>
